@@ -14,6 +14,8 @@ gem 'redis_logger', :git => "git@github.com:hellolucky/redis_logger.git"
 
     rails g redis_logger:install
 
+It'll generate "config/initializers/redis_logger.rb" to overwrite the default logger in redis-rb
+
 **3. Initialize Redis and specify logger**
 
 ```ruby
