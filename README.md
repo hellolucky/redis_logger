@@ -7,7 +7,7 @@ RedisLogger is a better redis logger for Rails application
 **1. Add RedisLogger to your gemfile**
 
 ```ruby
-gem 'redis_logger'
+gem 'redis_logger', :git => "git@github.com:hellolucky/redis_logger.git"
 ```
 
 **2. Generate initializer**
