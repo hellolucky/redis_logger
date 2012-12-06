@@ -5,9 +5,10 @@ class Redis
       return yield unless @logger && @logger.debug?
       commands.each do |name, *args|
         ::ActiveSupport::Notifications.instrument('query.redis_logger', :query => "#{name.to_s.upcase} #{args.map(&:to_s).join(" ")}") do
-          yield
+          @exec_result = yield
         end
       end
+      return @exec_result
     end
   end
 end
