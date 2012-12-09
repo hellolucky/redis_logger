@@ -26,6 +26,17 @@ $redis = Redis.new(:logger => Rails.logger)
 
 ![Alt text](http://blog.hellolucky.info/wp-content/uploads/2012/12/螢幕快照-2012-12-03-下午8.49.19.png)
 
+## Change Log
+
+### 0.0.1
+
+Initialize project
+
+### 0.0.2
+
+* Fix return value bug
+* Fix the log missing problem when redis is used in ActiveRecord Callback
+
 ## Author
 
 * I'm hellolucky, I come from Taiwan
