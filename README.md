@@ -28,11 +28,11 @@ $redis = Redis.new(:logger => Rails.logger)
 
 ## Change Log
 
-### 0.0.1
+### v0.0.1
 
-Initialize project
+* Initialize project
 
-### 0.0.2
+### v0.0.2
 
 * Fix return value bug
 * Fix the log missing problem when redis is used in ActiveRecord Callback
